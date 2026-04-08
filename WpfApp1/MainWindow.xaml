@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid Background="#FF11ABA8">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="29*"/>
+        </Grid.ColumnDefinitions>
+        <Image Margin="117,80,204,94" Source="/Images/image-removebg-preview.png" Stretch="Fill" Grid.Column="1"/>
+        <Button Name="KrestikiNoliki_Button" Content="Button" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top" Height="112" Width="121" Click="KrestikiNoliki_Button_Click"/>
     </Grid>
 </Window>

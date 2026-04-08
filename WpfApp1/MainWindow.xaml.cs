@@ -20,5 +20,14 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        
+
+        private void KrestikiNoliki_Button_Click(object sender, RoutedEventArgs e)
+        {
+            KrestikiNoliki newWindow = new KrestikiNoliki();
+            newWindow.Show();
+        }
     }
+    
 }

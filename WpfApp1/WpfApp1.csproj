@@ -8,4 +8,14 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\image-removebg-preview.png" />
+    <None Remove="IMG_0779 %281%29.webp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\image-removebg-preview.png" />
+    <Resource Include="IMG_0779 (1).webp" />
+  </ItemGroup>
+
 </Project>
