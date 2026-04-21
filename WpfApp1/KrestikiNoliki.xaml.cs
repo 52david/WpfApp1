@@ -45,7 +45,7 @@ namespace WpfApp1
 
                 if (game.CheckWin())
                 {
-                    MessageBox.Show("Победил " + game.TekushijPlayer);
+                    MessageBox.Show("Win " + game.TekushijPlayer);
                     return;
                 }
 
