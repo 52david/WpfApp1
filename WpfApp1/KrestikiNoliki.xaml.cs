@@ -39,13 +39,13 @@ namespace WpfApp1
             int row = Grid.GetRow(btn);
             int col = Grid.GetColumn(btn);
 
-            if (game.Chod(row, col))
+            if (game.Chod(row, col)) 
             {
-                btn.Content = game.TekushijPlayer;
+                btn.Content = game.TekushijPlayer; 
 
                 if (game.CheckWin())
                 {
-                    MessageBox.Show("Win" + game.TekushijPlayer);
+                    MessageBox.Show("Победил " + game.TekushijPlayer);
                     return;
                 }
 
