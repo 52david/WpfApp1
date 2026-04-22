@@ -10,11 +10,15 @@
 
   <ItemGroup>
     <None Remove="Images\image-removebg-preview.png" />
+    <None Remove="Images\Snímka_obrazovky_2026-04-22_094755-removebg-preview.png" />
+    <None Remove="Images\Snímka_obrazovky_2026-04-22_095526-removebg-preview.png" />
     <None Remove="IMG_0779 %281%29.webp" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Images\image-removebg-preview.png" />
+    <Resource Include="Images\Snímka_obrazovky_2026-04-22_094755-removebg-preview.png" />
+    <Resource Include="Images\Snímka_obrazovky_2026-04-22_095526-removebg-preview.png" />
     <Resource Include="IMG_0779 (1).webp" />
   </ItemGroup>
 

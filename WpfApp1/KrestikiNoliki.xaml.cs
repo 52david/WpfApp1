@@ -36,10 +36,10 @@ namespace WpfApp1
         {
             Button btn = (Button)sender;
 
-            int row = Grid.GetRow(btn);
-            int col = Grid.GetColumn(btn);
+            int rad = Grid.GetRow(btn);
+            int kol = Grid.GetColumn(btn);
 
-            if (game.Chod(row, col)) 
+            if (game.Chod(rad, kol)) 
             {
                 btn.Content = game.TekushijPlayer; 
 
