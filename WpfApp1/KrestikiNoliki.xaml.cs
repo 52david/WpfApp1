@@ -31,9 +31,17 @@ namespace WpfApp1
         Game game1 = new Game();
 
         Button[,] buttons = new Button[3, 3];
+
+        int scoreX = 0;
+        int scoreO = 0;
+
+        string filePath = "score.txt";
         public KrestikiNoliki()
         {
             InitializeComponent();
+
+            Zagruzka();
+
             player1 = player1;
             player2 = player2;
 
@@ -62,7 +70,24 @@ namespace WpfApp1
 
                 if (game.CheckWin())
                 {
-                    MessageBox.Show("Win " + game.TekushijPlayer);
+                   
+                    if (game.TekushijPlayer == 'X')
+                    {
+                        scoreX++;
+                    }
+                    else
+                    {
+                        scoreO++;
+                    }
+
+                    SaveScore();          
+                    Obnova();   
+
+                    MessageBox.Show("Победил " + game.TekushijPlayer);
+
+                    Restart();
+                    VyborPanel.Visibility = Visibility.Visible;
+
                     return;
                 }
 
@@ -74,7 +99,25 @@ namespace WpfApp1
 
                     if (game.CheckWin())
                     {
+                        if (game.TekushijPlayer == 'X')
+                        {
+                            scoreX++;
+                        }
+                        else
+                        {
+                            scoreO++;
+                        }
+
+                        SaveScore();
+                        Obnova();
+
+
                         MessageBox.Show("Win " + game.TekushijPlayer);
+
+                        Restart();
+
+                        VyborPanel.Visibility = Visibility.Visible;
+
                         return;
                     }
                     game.SwitchPlayer();
@@ -104,11 +147,51 @@ namespace WpfApp1
                 {
                     buttons[rad, kol].Content = game.TekushijPlayer;
                     
-                    break;                }
-                 }
+                    break;
+                }
+            }
+        }
+        private void Zagruzka()
+        {
+            if (File.Exists(filePath))
+            {
+                string[] lines = File.ReadAllLines(filePath);
+
+                if (lines.Length >= 2)
+                {
+                    scoreX = int.Parse(lines[0]);
+                    scoreO = int.Parse(lines[1]);
+                }
+            }
+
+            Obnova();
+        }
+        private void SaveScore()
+        {
+            File.WriteAllLines(filePath, new string[]
+            {
+        scoreX.ToString(),
+        scoreO.ToString()
+            });
         }
 
+        private void Obnova()
+        {
+            Schet.Text = "Score: " + scoreX + " : " + scoreO;
+        }
 
+        private void Restart()
+        {
+            game = new Game();
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    buttons[i, j].Content = null;
+                }
+            }
+        }
 
 
     }
