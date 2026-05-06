@@ -3,15 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using KrestikiNolikiIgra;
 
-namespace WpfApp1
+namespace KrestikiNolikiIgra
 {
     public class Game
     {
         public char[,] Board = new char[3, 3];
         public char TekushijPlayer = 'X';
 
-        public bool Chod(int row , int column)
+        public bool Chod(int row, int column)
         {
             if (Board[row, column] == '\0')
             {

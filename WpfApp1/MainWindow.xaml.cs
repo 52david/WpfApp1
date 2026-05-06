@@ -27,6 +27,8 @@ namespace WpfApp1
         {
             KrestikiNoliki newWindow = new KrestikiNoliki();
             newWindow.Show();
+
+            this.Close();
         }
     }
     

@@ -22,4 +22,8 @@
     <Resource Include="IMG_0779 (1).webp" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="CuEfaIgra\" />
+  </ItemGroup>
+
 </Project>
