@@ -30,6 +30,14 @@ namespace WpfApp1
 
             this.Close();
         }
+
+        private void CuEfa_Button_Click(object sender, RoutedEventArgs e)
+        {
+            Cuefa newWindow = new Cuefa();
+            newWindow.Show();
+
+            this.Close();
+        }
     }
     
 }

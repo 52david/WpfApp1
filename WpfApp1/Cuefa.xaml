@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp1.Cuefa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Cuefa" Height="450" Width="800">
+
+
+
+    <Grid Background="#FF909090">
+        <TextBlock HorizontalAlignment="Center" Margin="0,248,0,0" TextWrapping="Wrap" Text="Vyber:" VerticalAlignment="Top" Height="176" Width="780" TextAlignment="Center" Foreground="Black" Background="#FFC8C8C8"/>
+        <Button Name="Kamen"  Content="" HorizontalAlignment="Left" Margin="45,278,0,0" VerticalAlignment="Top" Height="142" Width="189" Click="Kamen_Click" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-0.241"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.372"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="/ChatGPT Image 7 трав. 2026 р., 20_23_35.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Bumaga" Content="" HorizontalAlignment="Center" Margin="0,276,0,0" VerticalAlignment="Top" Height="140" Width="200" Click="Bumaga_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/ChatGPT Image 7 трав. 2026 р., 20_25_30.png"/>
+            </Button.Background>
+        </Button>
+        <Button Name="Nozhnicy" Content="" HorizontalAlignment="Left" Margin="562,274,0,0" VerticalAlignment="Top" Height="142" Width="209" Click="Nozhnicy_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/ChatGPT Image 7 трав. 2026 р., 20_24_33.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock Grid.Column="0" Name="IgrokVzbor" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="207" Width="288" Foreground="Black" Background="White"><Run Language="sk-sk"/></TextBlock>
+        <TextBlock Grid.Column="1" Name="BotVybor" HorizontalAlignment="Left" Margin="502,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="207" Width="288" Foreground="Black" Background="White"><Run Language="sk-sk"/></TextBlock>
+        <TextBlock Name="ResultText" HorizontalAlignment="Left" Margin="314,81,0,0" TextWrapping="Wrap" Text="Result: " VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="79" Width="147" FontSize="18" Foreground="Black" Background="White">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.112"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+    </Grid>
+</Window>
