@@ -34,9 +34,7 @@
                 <ImageBrush ImageSource="/ChatGPT Image 7 трав. 2026 р., 20_24_33.png"/>
             </Button.Background>
         </Button>
-        <TextBlock Grid.Column="0" Name="IgrokVzbor" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="207" Width="288" Foreground="Black" Background="White"><Run Language="sk-sk"/></TextBlock>
-        <TextBlock Grid.Column="1" Name="BotVybor" HorizontalAlignment="Left" Margin="502,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="207" Width="288" Foreground="Black" Background="White"><Run Language="sk-sk"/></TextBlock>
-        <TextBlock Name="ResultText" HorizontalAlignment="Left" Margin="314,81,0,0" TextWrapping="Wrap" Text="Result: " VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="79" Width="147" FontSize="18" Foreground="Black" Background="White">
+        <TextBlock Name="ResultText" HorizontalAlignment="Left" Margin="324,47,0,0" TextWrapping="Wrap" Text="Result: " VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="79" Width="147" FontSize="18" Foreground="Black" Background="White">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -46,6 +44,11 @@
                 </TransformGroup>
             </TextBlock.RenderTransform>
         </TextBlock>
+        <Image Name="PlayerImage" HorizontalAlignment="Left" Height="211" Margin="10,27,0,0" VerticalAlignment="Top" Width="289"/>
+        <Image Name="BotImage" HorizontalAlignment="Left" Height="211" Margin="500,27,0,0" VerticalAlignment="Top" Width="289"/>
+        <TextBox HorizontalAlignment="Left" Margin="0,4,0,0" TextWrapping="Wrap" Text="You" VerticalAlignment="Top" Width="120"/>
+        <TextBox HorizontalAlignment="Left" Margin="680,4,0,0" TextWrapping="Wrap" Text="Bot" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.669,0.562"/>
+        <TextBlock x:Name="schet" HorizontalAlignment="Center" Margin="0,141,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="45" Width="148"/>
 
     </Grid>
 </Window>

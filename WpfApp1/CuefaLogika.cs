@@ -12,7 +12,10 @@ namespace WpfApp1
 
         public string BotChoice;
         public string Result;
-       
+
+        public bool PlayerWin;
+        public bool BotWin;
+
         public void Igrat(string player)
         {
             string[] choices = { "rock", "scissors", "paper" };
@@ -29,10 +32,12 @@ namespace WpfApp1
                 (player == "paper" && BotChoice == "rock"))
             {
                 Result = "You win";
+                PlayerWin = true;
             }
             else
             {
                 Result = "You lost";
+                BotWin = true;
             }
         }
     }
