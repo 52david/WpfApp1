@@ -18,6 +18,9 @@ namespace WpfApp1
 
         public void Igrat(string player)
         {
+            PlayerWin = false;
+            BotWin = false;
+
             string[] choices = { "rock", "scissors", "paper" };
 
             BotChoice = choices[rnd.Next(0, 3)];

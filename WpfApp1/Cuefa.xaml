@@ -49,6 +49,7 @@
         <TextBox HorizontalAlignment="Left" Margin="0,4,0,0" TextWrapping="Wrap" Text="You" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Margin="680,4,0,0" TextWrapping="Wrap" Text="Bot" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.669,0.562"/>
         <TextBlock x:Name="schet" HorizontalAlignment="Center" Margin="0,141,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="45" Width="148"/>
+        <Button x:Name="Close" Content="X" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" Height="35" FontSize="22" FontFamily="Arial Black" Width="48" Click="Close_Click"/>
 
     </Grid>
 </Window>

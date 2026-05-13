@@ -81,6 +81,7 @@ namespace WpfApp1
 
             Sochranit();
             Obnova();
+            
 
             ResultText.Text =
                 "Ty: " + player +
@@ -135,6 +136,14 @@ namespace WpfApp1
             schet.Text =
                 "Ty: " + playerScore +
                 " | Bot: " + botScore;
+        }
+
+        private void Close_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+
+            this.Close();
         }
     }
 }
