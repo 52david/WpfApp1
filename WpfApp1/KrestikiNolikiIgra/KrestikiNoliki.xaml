@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="KrestikiNoliki" Height="475" Width="815">
+        Title="KrestikiNoliki" Height="485" Width="815">
     <Grid Background="#FFA4EAF7">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="103*"/>
             <ColumnDefinition Width="57*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="7*"/>
-            <RowDefinition Height="83*"/>
-            <RowDefinition Height="127*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="158*"/>
+            <RowDefinition Height="269*"/>
         </Grid.RowDefinitions>
         <Image Margin="351,-11,66,93" Source="/Images/Snímka_obrazovky_2026-04-22_095526-removebg-preview.png" Stretch="Fill" Grid.RowSpan="2"/>
 
@@ -66,18 +66,18 @@
                     </TransformGroup>
                 </Button.RenderTransform>
             </Button>
-            <Button x:Name="b00" Grid.Row="0" Grid.Column="0" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="11,9,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="106" Width="138"/>
-            <Button x:Name="b01" Grid.Row="0" Grid.Column="1" Click="Button_Click" Content="" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="105" Width="142"/>
-            <Button x:Name="b02" Grid.Row="0" Grid.Column="2" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="308,10,0,0" VerticalAlignment="Top" Height="105" Width="140"/>
-            <Button x:Name="b10" Grid.Row="1" Grid.Column="0" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="104" Width="142"/>
-            <Button x:Name="b11" Grid.Row="1" Grid.Column="1" Click="Button_Click" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="104" Width="142"/>
-            <Button x:Name="b12" Grid.Row="1" Grid.Column="2" Click="Button_Click" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Height="104" Width="142" Margin="306,0,0,0"/>
-            <Button x:Name="b20" Grid.Row="2" Grid.Column="0" Click="Button_Click" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="104" Width="142" Margin="10,251,0,0"/>
-            <Button x:Name="b21" Grid.Row="2" Grid.Column="1" Click="Button_Click" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Height="104" Width="142" Margin="0,251,0,0"/>
-            <Button x:Name="b22" Grid.Row="2" Grid.Column="2" Click="Button_Click" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="104" Width="142" Margin="306,251,0,0"/>
+            <Button x:Name="b00" Grid.Row="0" Grid.Column="0" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="11,9,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="106" Width="138" FontSize="36" FontFamily="Segoe UI Black"/>
+            <Button x:Name="b01" Grid.Row="0" Grid.Column="1" Click="Button_Click" Content="" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Height="105" Width="142" FontFamily="Segoe UI Black" FontSize="36"/>
+            <Button x:Name="b02" Grid.Row="0" Grid.Column="2" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="308,10,0,0" VerticalAlignment="Top" Height="105" Width="140" FontSize="36" FontFamily="Segoe UI Black"/>
+            <Button x:Name="b10" Grid.Row="1" Grid.Column="0" Click="Button_Click" Content="" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Height="104" Width="142" FontSize="36" FontFamily="Segoe UI Black"/>
+            <Button x:Name="b11" Grid.Row="1" Grid.Column="1" Click="Button_Click" Content="" HorizontalAlignment="Center" VerticalAlignment="Center" Height="104" Width="142" FontSize="36" FontFamily="Segoe UI Black"/>
+            <Button x:Name="b12" Grid.Row="1" Grid.Column="2" Click="Button_Click" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Height="104" Width="142" Margin="306,0,0,0" FontSize="36" FontFamily="Segoe UI Black"/>
+            <Button x:Name="b20" Grid.Row="2" Grid.Column="0" Click="Button_Click" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="104" Width="142" Margin="10,251,0,0" FontSize="36" FontFamily="Segoe UI Black"/>
+            <Button x:Name="b21" Grid.Row="2" Grid.Column="1" Click="Button_Click" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Height="104" Width="142" Margin="0,251,0,0" FontSize="36" FontFamily="Segoe UI Black"/>
+            <Button x:Name="b22" Grid.Row="2" Grid.Column="2" Click="Button_Click" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Height="104" Width="142" Margin="306,251,0,0" FontSize="36" FontFamily="Segoe UI Black"/>
         </Grid>
 
-        <Grid x:Name="VyborPanel" Background="Gray" Grid.ColumnSpan="2" Grid.RowSpan="3">
+        <Grid x:Name="VyborPanel" Background="Gray" Height="NaN" Width="NaN" Grid.ColumnSpan="2" Grid.RowSpan="3">
             <Border Width="473" Height="230" Background="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,85,0,0" RenderTransformOrigin="0.5,0.5">
                 <Border.RenderTransform>
                     <TransformGroup>
@@ -98,7 +98,7 @@
             <TextBlock Name="Schet" HorizontalAlignment="Left" Margin="26,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="524" FontSize="48" FontFamily="Sitka Text Semibold"/>
             <Button Name="NaGlavnuju" Content="X" HorizontalAlignment="Left" Margin="666,0,0,0" VerticalAlignment="Top" Height="76" Width="92" FontSize="48" Click="Button_Click_1" FontFamily="Segoe UI Black"/>
         </Grid>
-        <Image HorizontalAlignment="Left" Height="331" Margin="-146,-142,0,0" VerticalAlignment="Top" Width="345" Source="/Images/Snímka_obrazovky_2026-04-22_094755-removebg-preview.png" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="3">
+        <Image HorizontalAlignment="Left" Height="331" Margin="-146,-142,0,0" VerticalAlignment="Top" Width="345" Source="/Images/Snímka_obrazovky_2026-04-22_094755-removebg-preview.png" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
